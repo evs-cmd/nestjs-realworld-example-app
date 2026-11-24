@@ -28,6 +28,7 @@ export class ProfileService {
   }
 
   async findProfile(id: number, followingUsername: string): Promise<ProfileRO> {
+    // ArchBeagle language walk: a comment-only test edit, closed unmerged.
     const _profile = await this.userRepository.findOne( {username: followingUsername});
 
     if(!_profile) return;

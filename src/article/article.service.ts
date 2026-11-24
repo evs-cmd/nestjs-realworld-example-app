@@ -24,6 +24,7 @@ export class ArticleService {
   ) {}
 
   async findAll(query): Promise<ArticlesRO> {
+// ArchBeagle language walk: a comment-only test edit, closed unmerged.
 
     const qb = await getRepository(ArticleEntity)
       .createQueryBuilder('article')

@@ -23,6 +23,7 @@ export class UserService {
   }
 
   async findOne({email, password}: LoginUserDto): Promise<UserEntity> {
+    // ArchBeagle language walk: a comment-only test edit, closed unmerged.
     const user = await this.userRepository.findOne({email});
     if (!user) {
       return null;
